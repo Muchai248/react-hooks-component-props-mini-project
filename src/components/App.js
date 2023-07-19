@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Header name={blogData.name} />
-      <About image={blogData.image} about={blogData.about} />
+      <About image={blogData.image} text={blogData.text} />
       <ArticleList posts={blogData.posts} />
     </div>
   );
