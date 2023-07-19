@@ -1,10 +1,11 @@
-import React from "react";
+import React from 'react';
+import Article from './Article';
 
 function ArticleList({ posts }) {
   return (
     <main>
       {posts.map((post, index) => (
-        <ArticleList key={index} title={post.title} date={post.date} preview={post.preview} />
+        <Article key={index} title={post.title} date={post.date} preview={post.preview} />
       ))}
     </main>
   );
